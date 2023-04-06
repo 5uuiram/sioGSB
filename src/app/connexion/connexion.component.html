@@ -1,0 +1,14 @@
+<div class="centrer">
+    <h1>Connexion</h1>
+    <form class="col-lg-6" name="frmLogin" (ngSubmit)="valider()">
+        <input type="text" placeholder="Identifiant" name="lg" [(ngModel)]="login"/>
+        <p>Votre login : {{login}}</p>
+        <b>
+            <p>Mot de passe</p>
+        </b>
+        <input type="password" placeholder="FDP heuuu.. MDP*" name="pw" [(ngModel)]="mdp">
+        <br><br>
+        <input type="submit" value="valider"> <br>
+        <div class="alert alter-danger" [hidden]="estCache">{{lblMessage}}</div>
+    </form>
+</div>
